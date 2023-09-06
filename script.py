@@ -1,3 +1,9 @@
 import pandas as pd
 
-print(pd.read_csv('github-course-data.csv').to_string())
+data = pd.read_csv('github-course-data.csv')
+
+firstnames = data['firstname'].values
+lastnames = data['lastname'].values
+
+print(firstnames)
+print(lastnames)
